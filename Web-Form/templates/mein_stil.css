@@ -1,0 +1,60 @@
+/* Hauptstil */
+body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Überschriften */
+h1, h2, h3, h4, h5, h6 {
+  color: #4b0082;
+}
+
+/* Link-Styles */
+a {
+  color: #4b0082;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Text-Styles */
+p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* Formularelemente */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  padding: 10px;
+  border: 1px solid #4b0082;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+input[type="submit"] {
+  background-color: #4b0082;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #4b0082;
+}
+
+/* Akzentfarbe */
+.accent {
+  color: #4b0082;
+}
