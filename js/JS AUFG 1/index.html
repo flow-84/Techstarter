@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    function showNotification() {
+      var textareaValue = document.getElementById("myTextarea").value;
+      alert("" + textareaValue);
+    }
+  </script>
+</head>
+<body>
+  <h1>Formular</h1>
+
+  <form>
+    <textarea id="myTextarea" rows="4" cols="50"></textarea><br>
+    <button type="button" onclick="showNotification()">Benachrichtigung anzeigen</button>
+  </form>
+</body>
+</html>

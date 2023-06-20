@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login-Formular mit Passwort-Sichtbarkeit</title>
+  <style>
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input {
+      padding: 5px;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Login-Formular</h1>
+
+  <div class="form-group">
+    <label for="username">Benutzername:</label>
+    <input type="text" id="username">
+  </div>
+
+  <div class="form-group">
+    <label for="password">Passwort:</label>
+    <input type="password" id="password">
+    <input type="checkbox" id="togglePassword">
+    <label for="togglePassword">Passwort anzeigen</label>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var passwordInput = document.getElementById('password');
+      var togglePassword = document.getElementById('togglePassword');
+
+      togglePassword.addEventListener('change', function() {
+        if (togglePassword.checked) {
+          passwordInput.type = 'text';
+        } else {
+          passwordInput.type = 'password';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
