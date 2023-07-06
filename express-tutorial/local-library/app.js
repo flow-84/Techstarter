@@ -7,8 +7,15 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
-app.set('view engine', 'pug');
-app.set('views', path.join(__dirname, 'views'));
+// Mongoose-Verbindung einrichten
+const mongoose = require("mongoose");
+mongoose.set("strictQuery", false);
+const mongoDB = "mongodb+srv://flow:Mittra84@tut.jbmtwrs.mongodb.net/tut?retryWrites=true&w=majority";
+
+main().catch((err) => console.log(err));
+async function main() {
+  await mongoose.connect(mongoDB);
+}
 
 app.use(logger('dev'));
 app.use(express.json());
