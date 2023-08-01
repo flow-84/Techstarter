@@ -1,6 +1,6 @@
 // src/Calculator.js
 import React, { useState } from 'react';
-import Converter from './Converter';
+import Converter from './CurrencyConverter';
 
 const Calculator = () => {
   const [fahrenheit, setFahrenheit] = useState('');

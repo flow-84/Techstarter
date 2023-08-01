@@ -1,12 +1,12 @@
 // src/App.js
 import React from 'react';
 import './App.css';
-import Calculator from './Calculator';
+import CurrencyConverter from './CurrencyConverter';
 
 function App() {
   return (
     <div className="App">
-      <Calculator />
+      <CurrencyConverter />
     </div>
   );
 }
