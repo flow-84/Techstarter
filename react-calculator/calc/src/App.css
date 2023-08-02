@@ -1,19 +1,6 @@
 /* src/App.css */
-.App {
-  text-align: center;
-  margin-top: 50px;
-  display: flexbox;
-  font-size: 30px;
-}
-
-input {
-  margin-right: 10px;
-  font-size: 100%;
-}
-select{
-font-size: 100%;
-}
-
-button  {
-  font-size: 100%;
+/* Hier kannst du globale CSS-Stile hinzufügen, falls benötigt */
+body {
+  background-color: black;
+  margin: 0;
 }
