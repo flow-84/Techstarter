@@ -2,6 +2,8 @@
 .App {
   text-align: center;
   margin-top: 50px;
+  max-width: 500px;
+  display: flex;
 }
 
 input {
@@ -19,3 +21,4 @@ button {
   font-size: 18px;
   margin: 5px;
 }
+
